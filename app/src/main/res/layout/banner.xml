@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="fragment.RecommendFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:orientation="vertical">
+
+     <!--   <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sim"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="50dp"
+            ></com.facebook.drawee.view.SimpleDraweeView>-->
+
+        <!--    <android.support.v4.view.ViewPager
+                android:id="@+id/home_viewpager_banner"
+                android:layout_width="match_parent"
+                android:layout_height="164dp"
+                android:layout_margin="50dp"
+                android:clipChildren="false">
+
+            </android.support.v4.view.ViewPager>
+-->
+
+
+        <com.recker.flybanner.FlyBanner
+            android:id="@+id/flybanner"
+            android:layout_width="match_parent"
+            android:layout_margin="50dp"
+            android:layout_height="200dp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="热销新品"
+                android:textColor="#ff7f57"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="24dp" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/hot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
